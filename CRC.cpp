@@ -26,7 +26,7 @@ string CRC_division(string DataWord,string Divisor){
 				xor with zero
 		*/
 
-	while(i<len){
+	while(i<=len){
 		string result="";
 		unsigned short a,b;
 		
