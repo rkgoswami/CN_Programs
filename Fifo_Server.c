@@ -24,7 +24,7 @@ void server(int readfd,int writefd)
 	printf(" %s  ",buf);
  
 	fd=open(buf,O_RDONLY);
-	printf("\nReading from pipe the contents of the file and writing to client: ");
+printf("\nReading the contents of the file and writing to client: ");
 
 	while((n=read(fd,buf,MAXLINE))>0){
 		write(writefd,buf,n);
